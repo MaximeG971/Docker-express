@@ -5,11 +5,11 @@ services:
       - 5050:5000
     command: npm run dev
     volumes:
-      - ./server/src/:/app/src/
+      - ./server/src/:/app/src
   client:
     build: ./client
     ports:
-      - 8080:3000
+      - 3000:3000
     command: npm start
     volumes:
       - ./client/src/:/app/src
